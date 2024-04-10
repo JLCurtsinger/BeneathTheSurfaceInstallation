@@ -1,4 +1,8 @@
 
+#about div {
+    line-height: 1;
+}
+
 body {
     background-color: #395b67;
     color: rgba(255, 255, 255, 0.977);
