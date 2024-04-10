@@ -46,6 +46,8 @@ body {
 
 #contact {
     align-items: center;
+    background-color: #363f702f;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.175);
     display: flex;
     flex-direction: column;
     justify-content: center;
