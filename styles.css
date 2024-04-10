@@ -63,6 +63,19 @@ body {
     width: 45vw;
 }
 
+#contact button {
+    background-color: #3b3174;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.494);
+    color: white;
+    letter-spacing: .2px;
+    padding: 3px 7px;
+}
+#contact button:active {
+    box-shadow: none;
+}
+
 .form-row {
     display: flex;
     align-items: center;
