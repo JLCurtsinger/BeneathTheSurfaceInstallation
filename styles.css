@@ -1,0 +1,131 @@
+
+body {
+    background-color: #395b67;
+    color: rgba(255, 255, 255, 0.977);
+}
+
+.carousel-item {
+    visibility: hidden;
+}
+.item-detail {
+    visibility: hidden;
+}
+
+#about {
+    background-color: #363f70;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+}
+
+.active {
+    visibility: visible;
+}
+
+.button {
+    background-color: #3b3174;
+    border: 1px solid rgba(255, 255, 255, 0.126);
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.922);
+    color: white;
+    font-weight: bold;
+    padding: .15rem 1rem;
+    margin: 1px;
+
+}
+
+.button:active {
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    box-shadow: none;
+}
+
+#content {
+    background-color: #374d6db9;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.339);
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: .055rem;
+}
+
+.item-detail, .active {
+    bottom: 5px;
+}
+
+#models {
+    background-color: rgba(7, 7, 7, 0.943);
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+    text-align: center;
+}
+
+#models h2 {
+    padding: 5px;
+}
+
+.nav-container {
+    background-color: #3b3174f0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.497);
+    margin: 0 auto;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 1px;
+}
+
+.nav-container a {
+    color: rgba(255, 255, 255, 0.992);
+    font-size: 11.8pt;
+    letter-spacing: .06rem;
+    line-height: 1.34rem;
+    padding: 2px;
+    text-decoration: none;  
+    text-shadow: 1px 1px 5px rgba(4, 4, 4, 0.851); 
+}
+
+.nav-container a:active {
+    color: white;
+    text-shadow: none;
+}
+
+.nav-container a:hover {
+    /* background-color: rgba(14, 13, 13, 0.843); */
+    border: 1.5px solid rgba(255, 255, 255, 0.794);
+    border-radius: 3px;
+    color: white;
+    font-size: 12.2pt;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.451); 
+}
+
+.nav-container h1 {
+    color: #3f6a61;
+    font-size: 1.75rem;
+    letter-spacing: .1rem;
+    margin-left: .6rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.498);
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 5px;
+}
+
+#process {
+    background-color: #363f7047;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.253);
+}
+
+section {
+    text-align: center;
+}
+
+.selector-menu, .button {
+    margin: 5px 3px;
+}
