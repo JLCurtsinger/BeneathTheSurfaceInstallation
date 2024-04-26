@@ -275,7 +275,6 @@ nav ul {
     font-size: 3vh;
     letter-spacing: .101rem;
     line-height: 1.34rem;
-    padding: 2%;
     text-decoration: none;  
     text-shadow: 1px 1px 5px rgba(4, 4, 4, 0.851); 
 }
@@ -443,6 +442,10 @@ section {
         transform: translateY(-50%); 
         width: auto; 
         z-index: 999; 
+    }
+    .nav-links ul li {
+        margin: 0 3px;
+        padding: 0 3px; /* Spacing between links */
     }
 
     /* Styles for when menu is toggled open */
