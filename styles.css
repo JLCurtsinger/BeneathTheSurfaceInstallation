@@ -286,9 +286,6 @@ nav ul {
 }
 
 .nav-container a:hover {
-    border-radius: 3px;
-    /* color: var(--text-color); */
-    font-size: 12.2pt;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.302); 
 }
 
@@ -319,7 +316,7 @@ nav ul {
     width: 100%;
 }
 .nav-links ul.open {
-    display: flex; /* This should be the display style when the menu is open */
+    display: flex; 
 }
 .nav-links ul li {
     margin: 0 10px;
