@@ -249,17 +249,11 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     list-style: none;
     margin: 0;
-    /* margin-left: 20px; */
     padding: 0;
-    text-align: right;
-}
-
-nav ul li {
-    display: inline;
-    padding-right: 5px;
+    text-align: center;
 }
 
 .nav-container {
@@ -415,7 +409,7 @@ section {
         border: 0;
         display: block; /* Show the hamburger menu */
         font-size: 2em;
-        margin: 0 -5px;
+        margin: auto 2px;
         order: 2;
         position: fixed; 
         right: 1.5vw;
@@ -443,8 +437,8 @@ section {
         height: auto;
         justify-content: center;
         list-style: none; 
-        /* right: 0; */
-        /* left: 0;  */
+        right: 0;
+        left: 0; 
         margin: 0 auto; 
         padding: 0; 
         position: fixed;
@@ -458,9 +452,7 @@ section {
     .nav-links ul.open {
         display: flex;
         font-size: .7rem;
-        /* height: 99%; */
-        position: fixed; 
-        right: 7vw;
+        position: fixed;
         top: 7vh;
         z-index: 999;
     }
