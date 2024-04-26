@@ -176,6 +176,8 @@ h1, h2 {
     color: var(--button-color);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.542);
     display: none; 
+    order: 1; /* Ensure menu comes first in small screens */
+    margin-right: 10px;
 }
 .hamburger-menu:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.277);
@@ -305,6 +307,12 @@ nav ul li {
     visibility: hidden;
 }
 
+.nav-links {
+    order: 2; /* Nav links come after hamburger menu */
+    flex-grow: 1; /* Allow nav links to take up available space */
+    justify-content: center; /* Center links */
+}
+
 .nav-links ul {
     align-items: center;
     display: flex;
@@ -410,7 +418,7 @@ section {
         margin: 0 -5px;
         order: 2;
         position: fixed; 
-        right: 20px;
+        right: 1.5vw;
         top: 4vh; 
         z-index: 1000;
     }
