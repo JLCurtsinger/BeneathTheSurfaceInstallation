@@ -193,6 +193,9 @@ header {
     align-items: center;
     display: flex;
     justify-content: center; /* Centers the nav-container horizontally */
+    /* position: absolute; */
+    top: 0;
+    /* z-index: 1000; */
     width: 100%;
 }
 
@@ -301,6 +304,13 @@ nav ul {
     order: 2; /* Nav links come after hamburger menu */
     flex-grow: 1; /* Allow nav links to take up available space */
     justify-content: center; /* Center links */
+    opacity: 1;
+    transition: opacity 1.5s ease-out;
+}
+.nav-links.hidden {
+    opacity: 0; /* Fully transparent */
+    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    visibility: hidden;
 }
 
 .nav-links ul {
