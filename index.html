@@ -7,8 +7,10 @@
         <meta http-equiv='expires' content='0'> 
         <meta http-equiv='pragma' content='no-cache'>
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
-        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
         <title>Beneath the Surface</title>
     </head>
 
@@ -121,6 +123,26 @@
     
             <section id="process">
                 <h2>Our Process</h2>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
                 <div>
                     <p>information about the process used to create the installation goes here</p>
                 </div>
@@ -150,6 +172,10 @@
                 </div>
             </section>
         </main>
+
+        <script src="scripts.js"></script>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <footer>
             <p>Beneath&nbsp;The&nbsp;Surface <br> 
