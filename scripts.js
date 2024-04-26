@@ -1,40 +1,69 @@
-"use strict";
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelector('.nav-links ul');
+    const hamburgerMenuButton = document.querySelector('.hamburger-menu');
 
-function changeItem(index) {
-    const carouselItems = document.querySelectorAll(".carousel-item");
-
-    for (let i=0; i<carouselItems.length; i++) {
-        if(i== index) {
-            carouselItems[i].classList.add("active");
-        }
-        else {
-            carouselItems[i].classList.remove("active");
-        }
-    }
-}
-document.addEventListener("DOMContentLoaded", () => {
-    changeItem(0);
+    initializeGallery();
+    initializeSwiper();
+    setupMenuToggle(navLinks, hamburgerMenuButton);
+    toggleNavOnScroll(navLinks, hamburgerMenuButton); // Initial check
+    window.addEventListener('scroll', () => toggleNavOnScroll(navLinks, hamburgerMenuButton));
 });
 
-// photo gallery
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+function initializeGallery() {
+    function changeItem(index) {
+        const carouselItems = document.querySelectorAll(".carousel-item");
+        carouselItems.forEach((item, i) => {
+            item.classList.toggle("active", i === index);
+        });
+    }
+    changeItem(0);
+}
+
+function initializeSwiper() {
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+}
+
+function setupMenuToggle(navLinks, hamburgerMenuButton) {
+    // Initially open the nav links
+    navLinks.classList.add('open');
+
+    hamburgerMenuButton.addEventListener('click', function () {
+        navLinks.classList.toggle('open');
+        hamburgerMenuButton.classList.toggle('is-visible', !navLinks.classList.contains('open'));
+    });
+}
+
+function toggleNavOnScroll(navLinks, hamburgerMenuButton) {
+    let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollPosition > 0) { // If there is any scroll, hide the nav links
+        navLinks.classList.remove('open');
+        hamburgerMenuButton.classList.add('is-visible');
+    } else { // Show nav links when at the top of the page
+        navLinks.classList.add('open');
+        hamburgerMenuButton.classList.remove('is-visible');
+    }
+}
