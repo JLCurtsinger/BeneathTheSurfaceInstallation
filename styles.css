@@ -26,8 +26,7 @@
 }
 
 body {
-    /* background-color: #cdf0b0; */
-    background-color: var(--body-color);
+    background: radial-gradient(circle, rgba(17,17,29,1) 6%, rgba(13,13,41,1) 41%, rgba(14,14,56,1) 75%, rgba(18,16,65,1) 100%);
     color: var(--text-color);
 }
 
