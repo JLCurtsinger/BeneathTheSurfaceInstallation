@@ -464,7 +464,7 @@ section {
         display: flex;
         font-size: .7rem;
         position: relative;
-        top: 1.5vh;
+        top: 2vh;
         z-index: 999;
     }
 }
