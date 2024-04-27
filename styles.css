@@ -1,9 +1,9 @@
 
 :root {
     --body-color: #071e3df3;
-    --header-footer-color: #286bf134;
+    --header-footer-color: #286bf121;
     --heading-color: #ebfcf9;
-    --section-color: #1f428750;
+    --section-color: #1f42872b;
     /* --text-color: #E8F1F5; */
     --text-color: #e8f1f5f9;
     --button-color: #405cf5;
@@ -26,7 +26,7 @@
 }
 
 body {
-    background: radial-gradient(circle, rgba(17,17,29,1) 6%, rgba(13,13,41,1) 41%, rgba(14,14,56,1) 75%, rgba(18,16,65,1) 100%);
+    background: radial-gradient(circle, rgba(17,17,29,1) 31%, rgba(13,13,37,1) 75%, rgba(14,14,50,1) 92%, rgba(17,15,57,1) 100%);
     color: var(--text-color);
 }
 
