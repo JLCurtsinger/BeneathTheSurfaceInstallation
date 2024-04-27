@@ -447,7 +447,7 @@ section {
         left: 0; 
         margin: 0 auto; 
         padding: 0; 
-        position: fixed;
+        position: relative;
         top: 50%; 
         transform: translateY(-50%); 
         width: auto; 
@@ -462,8 +462,8 @@ section {
     .nav-links ul.open {
         display: flex;
         font-size: .7rem;
-        position: fixed;
-        top: 5.7vh;
+        position: relative;
+        top: 1.5vh;
         z-index: 999;
     }
 }
