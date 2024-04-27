@@ -6,6 +6,7 @@
     --section-color: #1f42872b;
     /* --text-color: #E8F1F5; */
     --text-color: #e8f1f5f9;
+    --nav-link-color: #ebfcf9f4;
     --button-color: #405cf5;
     --button-color2: #21E6C1;
 }
@@ -274,7 +275,7 @@ nav ul {
 }
 
 .nav-container a {
-    color: var(--heading-color);
+    color: var(--nav-link-color);
     font-family: "Lato", sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
