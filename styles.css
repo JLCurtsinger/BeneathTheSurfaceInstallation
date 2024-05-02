@@ -205,6 +205,11 @@ html {
     /* letter-spacing: .1rem; */
 }
 
+#images {
+    display: flex;
+    flex-direction: column;
+}
+
 .item-detail, .active {
     bottom: 5px;
 }
@@ -406,6 +411,20 @@ section {
     width: 99vw;
 }
 
+.video-container {
+    display: flex;
+    flex-direction: column; /* Stack videos vertically */
+    align-items: center; /* Center videos horizontally */
+    justify-content: center; /* Center videos vertically */
+    width: 100%; /* Take full width of the container */
+    margin-top: 20px; /* Optional: space from top */
+}
+
+video {
+    width: 90%; /* Responsive width, adjust as needed */
+    max-width: 500px; /* Maximum width of the videos */
+    margin-bottom: 20px; /* Space between videos */
+}
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
