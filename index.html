@@ -14,7 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <title>Beneath the Surface</title>
     </head>
 
@@ -25,16 +25,19 @@
         <header>
             <div class="nav-container">
                 <nav>
-                    <!-- <button class="hamburger-menu" aria-label="Open navigation menu">
+                    <button class="hamburger-menu" aria-label="Open navigation menu">
                         ☰
-                    </button> -->
+                    </button>
+                    <a href="index.html" class="logo-link">
                         <img src="images/BeneathTheSurfaceLogo.png" alt="Beneath the Surface Installation Logo" class="logo">
+                    </a>
+                    <h1>Beneath The Surface</h1>
                     <div class="nav-links">
                         <ul>
-                            <li><a href="index.html#process">Process</a></li>
                             <li><a href="index.html#models">Models</a></li>
                             <li><a href="index.html#about">About</a></li>
-                            <!-- <li><a href="index.html#content">Content</a></li> -->
+                            <li><a href="index.html#content">Content</a></li>
+                            <li><a href="index.html#process">Process</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -46,7 +49,7 @@
                 <div>
                     <img src="images/ad.jpg" alt="ad for beneath the surface installation" id="ad">
                 </div>
-                <!-- <h1>Beneath The Surface</h1>
+                <!-- <h2>Beneath The Surface</h2>
                 <div>
                     <h3>May 2, 2024</h3>
                     <p>4:40pm-7:30pm MST</p>
@@ -66,31 +69,25 @@
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="images/processPics/initialTunnelPlans.jpg" alt="">
-                            <p>Planning the tunnel dimensions</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/processPics/tunnelReinforcements.jpg" alt="wood reinforcements for the installation tunnel">
-                            <p>planning tunnel reinforcements</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/processPics/posterPrinting.jpg" alt="the installation poster being printed">
-                            <p>printing the installation poster</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/processPics/posterBeforeCutting.jpg" alt="the installation poster about to be cut after printing">
-                            <p>cutting the installation poster</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/processPics/installationPlanning.jpg" alt="planning sheet">
-                            <p>plans and required items</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/processPics/installationPlanning2.jpg" alt="planning sheet">
-                            <p>designing the tunnel</p>
-                        </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="images/processPics/initialTunnelPlans.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/processPics/installationPlanning.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/processPics/installationPlanning2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/processPics/posterPrinting.jpg" alt="the installation poster being printed">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/processPics/posterBeforeCutting.jpg" alt="the installation poster about to be cut after printing">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/processPics/tunnelReinforcements.jpg" alt="">
+                    </div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -103,7 +100,27 @@
                     <div class="swiper-scrollbar"></div>
                 </div>
                 <div>
+                    <p>information about the process used to create the installation goes here</p>
                 </div>
+            </section>
+
+            <section id="videos">
+                <video controls width="250">
+                    <source src="videos/video1.mp4" type="video/mp4" />
+                  
+                    <source src="videos/video1.mov" type="video/mov" />
+                  
+                    <a href="images/processPics/video1.png">png</a>
+                  </video>
+
+                  <video controls width="250">
+                    <source src="videos/video2.mp4" type="video/mp4" />
+                  
+                    <source src="videos/video2.mov" type="video/mov" />
+                  
+                    <a href="images/processPics/video2.png">png</a>
+                    
+                  </video>
             </section>
 
             <section id="models">
