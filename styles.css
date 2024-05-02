@@ -177,6 +177,9 @@ h1, h2 {
     display: none; 
     order: 1; /* Ensure menu comes first in small screens */
     margin-right: 10px;
+    position: fixed; 
+    right: 10px; /* Adjust based on your layout needs */
+    top: 10px;
 }
 .hamburger-menu:hover {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.277);

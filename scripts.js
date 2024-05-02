@@ -56,14 +56,28 @@ function setupMenuToggle(navLinks, hamburgerMenuButton) {
     });
 }
 
+// function toggleNavOnScroll(navLinks, hamburgerMenuButton) {
+//     let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+//     if (scrollPosition > 58) { // If there is any scroll, hide the nav links
+//         navLinks.classList.add('hidden');
+//         navLinks.classList.remove('open');
+//         hamburgerMenuButton.classList.add('is-visible');
+//     } else { // Show nav links when at the top of the page
+//         navLinks.classList.add('open');
+//         navLinks.classList.remove('hidden');
+//         hamburgerMenuButton.classList.remove('is-visible');
+//     }
+// }
+
 function toggleNavOnScroll(navLinks, hamburgerMenuButton) {
     let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollPosition > 58) { // If there is any scroll, hide the nav links
+    if (scrollPosition > 58) {
         navLinks.classList.add('hidden');
         navLinks.classList.remove('open');
         hamburgerMenuButton.classList.add('is-visible');
-    } else { // Show nav links when at the top of the page
+    } else {
         navLinks.classList.add('open');
         navLinks.classList.remove('hidden');
         hamburgerMenuButton.classList.remove('is-visible');
