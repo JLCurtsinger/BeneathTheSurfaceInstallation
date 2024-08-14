@@ -251,6 +251,7 @@ label {
 
 nav {
     align-items: center; 
+    box-sizing: border-box;
     display: flex;
     height: 10vh;
     justify-content: space-between;
@@ -272,7 +273,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 950px;
+    /* max-width: 950px; */
     /* padding: 0 20px; */
     width: 100%;
 }
@@ -326,18 +327,18 @@ nav ul {
     flex-direction: row;
     justify-content: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     transition: all 0.3s ease-in-out;
     width: 100%;
 }
 .nav-links ul.open {
     display: flex;
 }
-.nav-links ul li {
+/* .nav-links ul li {
     margin: 0 20px;
-    padding: 0 25px; /* Spacing between links */
-}
+    padding: 0 25px; 
+} */
 
 #process {
     background-color: var(--section-color);
@@ -451,9 +452,9 @@ video {
         justify-content: center;
     }
 
-    .nav-container a {
+    /* .nav-container a {
         font-size: 1.3rem;
-    }
+    } */
 
     .nav-links ul {
         align-items: center;  
@@ -469,7 +470,7 @@ video {
     }
     .nav-links ul li {
         margin: 0 10px;
-        padding: 0 10px; /* Spacing between links */
+        padding: 0 10px; 
     }
 
     /* Styles for when menu is toggled open */
